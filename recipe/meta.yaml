@@ -25,7 +25,7 @@ requirements:
     - nbformat >=4.2.0
     - numpy
     - pandas
-    - plotly
+    - plotly >=5.2.2
     - python >=3.6
 
 test:
