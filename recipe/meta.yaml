@@ -1,5 +1,5 @@
 {% set name = "sankee" %}
-{% set version = "0.0.7" %}
+{% set version = "0.1.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sankee-{{ version }}.tar.gz
-  sha256: 9b2fedcc9e9ab6235e394c35c039fe2f42d4165b803f111445a824cebb56befb
+  sha256: 1871de48464c4f4fc2de11a2afa0d4d82c93d57da8ada05cd3bbcde96dda4240
 
 build:
   number: 0
