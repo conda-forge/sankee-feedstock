@@ -1,5 +1,5 @@
 {% set name = "sankee" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sankee-{{ version }}.tar.gz
-  sha256: 1871de48464c4f4fc2de11a2afa0d4d82c93d57da8ada05cd3bbcde96dda4240
+  sha256: 4a22f4bf1f33ebf3ef602e7b7fe8a6467a393fa78b0dbf6f3b1bbd1c3ea06b26
 
 build:
   number: 0
@@ -24,7 +24,8 @@ requirements:
     - numpy
     - pandas
     - plotly >=5.2.2
-    - python >=3.6
+    - python >=3.7
+    - ipywidgets
 
 test:
   imports:
