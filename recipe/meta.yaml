@@ -18,13 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
+    - hatchling
   run:
     - earthengine-api >=0.1.230
     - numpy
     - pandas
     - plotly >=5.2.2
-    - python >=3.7
+    - python >=3.8
     - ipywidgets
 
 test:
@@ -35,7 +36,7 @@ about:
   home: https://github.com/aazuspan/sankee
   summary: Visualize classified time series data with interactive Sankey plots in Google Earth Engine.
   dev_url: https://github.com/aazuspan/sankee/
-  license: GPL-3.0-or-later
+  license: MIT
   license_file: LICENSE
 
 extra:
