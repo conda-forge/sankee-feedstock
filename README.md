@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sankee-feedstoc
 
 Home: https://github.com/aazuspan/sankee
 
-Package license: GPL-3.0-or-later
+Package license: MIT
 
 Summary: Visualize classified time series data with interactive Sankey plots in Google Earth Engine.
 
