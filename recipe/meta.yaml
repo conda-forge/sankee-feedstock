@@ -7,28 +7,30 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sankee-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/sankee-{{ version }}.tar.gz
   sha256: a65b82f9a6ed75c8e6409387a762d12e02e642325d1d77f6f52c82782b71b511
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
   run:
     - earthengine-api >=0.1.230
     - numpy
     - pandas
     - plotly >=5.2.2
-    - python >=3.8
+    - python >={{ python_min }}
     - ipywidgets
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - sankee
 
